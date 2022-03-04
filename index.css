@@ -398,7 +398,7 @@ span:hover {
     }
     .header-container {
         display: flex;
-        width: auto;
+        width: 100%;
         height: auto;
         display: none;
         border-bottom: none;
