@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue Tutor Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="main-container" id="main-container">
+        <img id="hamburger" src="./imgs/square.png" alt="hamburger">
+        <header class="header-container" id="header-container">
+            <div class="curvedBorder"></div>
+            <div class="menu-container">
+                <button class="button" onclick="showContent(event, 'about')">ABOUT ME</button>
+                <button class="button" onclick="showContent(event, 'skills')">SKILLS</button>
+                <button class="button" onclick="showContent(event, 'services')">SERVICES</button>
+                <button class="button" onclick="showContent(event, 'certificates')">CERTIFICATES</button>
+                <button class="button" onclick="showContent(event, 'designs')">DESIGNS</button>
+                <button class="button contact" onclick="showContent(event, 'contact')">CONTACT</button>
+            </div>
+            <div class="curvedBorder"></div>
+        </header>
+        <div class="info-container">
+            <div class="main-content" id="about">
+                <span class="close-button">X</span>
+                <h3>ABOUT</h3>
+            </div>
+            <div class="main-content" id="skills">
+                <span class="close-button">X</span>
+                <h3>SKILLS</h3>
+            </div>
+            <div class="main-content" id="services">
+                <span class="close-button">X</span>
+                <h3>SERVICES</h3>
+            </div>
+            <div class="main-content" id="certificates">
+                <span class="close-button">X</span>
+                <h3>CERTIFICATES</h3>
+            </div>
+            <div class="main-content" id="designs">
+                <span class="close-button">X</span>
+                <h3>DESIGNS</h3>
+            </div>
+            <div class="main-content" id="contact">
+                <span class="close-button">X</span>
+                <h3>CONTACT</h3>
+            </div>
+        </div>
+        <div class="itsMeContainer">
+            <div class="itsMePicContainer">
+                <div class="itsMe">
+                    <div class="myName">
+                        <h2>Mr. Josue Tutor</h2>
+                        <h5>Front-End Web Designer</h5>
+                        <span>HTML-CSS-JavaScript</span>
+                        <button>Connect</button>
+                        <div class="coding">
+                            <img src="./imgs/todoProject.PNG" alt="todoProject">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis libero nostrum nesciunt modi quam, voluptatem amet porro. Cum omnis amet tempora totam nostrum dolorem quibusdam iure odit esse voluptatem!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-submit">
+            <form id="formMail">
+                <h1>HIRE ME</h1>
+                <input type="text" name="fullname" id="fullname" placeholder="fullname">
+                <input type="text" id="mail" name="mail" placeholder="email">
+                <input type="text" id="subject" name="subject" placeholder="subject">
+                <textarea name="message" resize="diabled" id="message" cols="10" rows="10" placeholder="Your message..."></textarea>
+                <button type="submit" id="submit">Send</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-manu">
+                <button class="one">one</button>
+                <button>two</button>
+                <button>three</button>
+                <button>four</button>
+                <button>five</button>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.facebook.com/justinjostinclarenze112386/"><img src="./imgs/facebook.png" alt="facebook"></a>
+                <img src="./imgs/github.png" alt="github">
+                <img src="./imgs/gmail.png" alt="gmail">
+                <img src="./imgs/instagram.png" alt="instagram">
+            </div>
+        </footer>
+    </div>
+    <script src="index.js" async></script>
+    <script src="mail.js" async></script>
+</body>
+
+</html>
