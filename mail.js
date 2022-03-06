@@ -32,7 +32,7 @@ formMail.addEventListener('submit', e => {
             }).catch(err => {
                 setTimeout(() => {
                     alert('error!', err.message)
-                })
+                }, 3000)
             })
     }
 
