@@ -8,7 +8,9 @@ const formEmail = document.querySelector(".form-submit")
 
 for (let closebut of closeButton) {
     closebut.addEventListener('click', e => {
-        e.target.parentElement.style.display = "none"
+        setTimeout(() => {
+            e.target.parentElement.style.display = "none"
+        }, 1000)
     })
 }
 
