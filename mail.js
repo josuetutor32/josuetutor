@@ -12,9 +12,12 @@ formMail.addEventListener('submit', e => {
     const subjectMail = document.querySelector('#subject').value
     const userMessage = document.querySelector('#message').value
 
-    if (fullname == null || fullname === '' && userEmail == null || userEmail === '' &&
-        subjectMail == null || subjectMail === '' && userMessage == null || userMessage === '') {
-        return alert('Error!')
+    function message(msg) {
+        return `${msg}`;
+    }
+
+    if (!fullname || !userEmail || !subjectMail || !userMessage) {
+        return msg('Input is required!')
     } else {
         const contactParams = {
             from_name: fullname,
