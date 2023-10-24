@@ -3,7 +3,7 @@
 })();
 
 const formMail = document.querySelector("#formMail")
-const formTitle = document.querySelector('.form-title')
+const formTitle = document.querySelector(".form-title")
 
 formMail.addEventListener('submit', e => {
     e.preventDefault()
@@ -13,13 +13,9 @@ formMail.addEventListener('submit', e => {
     const subjectMail = document.querySelector('#subject').value
     const userMessage = document.querySelector('#message').value
 
-    function message(msg) {
-        return `${msg}`;
-    }
-
-    const formTitle = document.querySelector('.form-title')
+    let formTitle = document.querySelector('.form-title')
     if (!fullname || !userEmail || !subjectMail || !userMessage) {
-        return formTitle.textContent = message('Input is required!')
+        return formTitle.textContent = "Input is required!"
     } else {
         const contactParams = {
             from_name: fullname,
