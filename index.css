@@ -45,6 +45,11 @@
                 font-size: smaller;
                 font-family: monospace;
             }
+
+           .error-message {
+                color: red !mportant;
+                background: transparent;
+           }
             
             .curvedBorder {
                 bottom: 0;
