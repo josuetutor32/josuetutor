@@ -5,6 +5,10 @@
 const formMail = document.querySelector("#formMail")
 const formTitle = document.querySelector(".form-title")
 
+function message(msg) {
+    return `${msg}`
+}
+
 formMail.addEventListener('submit', e => {
     e.preventDefault()
 
@@ -13,11 +17,6 @@ formMail.addEventListener('submit', e => {
     const subjectMail = document.querySelector('#subject').value
     const userMessage = document.querySelector('#message').value
 
-    function message(msg) {
-        return `${msg}`
-    }
-
-    const formTitle = document.querySelector('.form-title');
     if (!fullname || !userEmail || !subjectMail || !userMessage) {
         formTitle.textContent = message('Input is required!');
         return;
