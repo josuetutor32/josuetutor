@@ -19,7 +19,7 @@ formMail.addEventListener('submit', e => {
 
     const formTitle = document.querySelector('.form-title')
     if (!fullname || !userEmail || !subjectMail || !userMessage) {
-        return formTitle.textContent = msg('Input is required!')
+        return formTitle.textContent = message('Input is required!')
     } else {
         const contactParams = {
             from_name: fullname,
