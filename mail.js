@@ -23,7 +23,7 @@ formMail.addEventListener('submit', e => {
             message: userMessage,
         }
 
-        emailjs.send('service_5ij832g', 'template_kc9qkte', contactParams)
+        emailjs.send('service_6v88ywc', 'template_xy03tyj', contactParams)
             .then(res => {
                 setTimeout(() => {
                     alert('success', res.status, res.text)
